@@ -1,0 +1,10 @@
+.navbar {
+    background-color: purple;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.navbar-text,
+.navbar-brand {
+    color: navy;
+}

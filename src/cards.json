@@ -1,0 +1,121 @@
+[{
+        "name": "Beta Fish",
+        "url": "/images/betafish.png",
+        "id": 1,
+        "isClicked": false
+    },
+    {
+        "name": "Blow Fish",
+        "url": "/images/blowfish.png",
+        "id": 2,
+        "isClicked": false
+    },
+    {
+        "name": "Crab",
+        "url": "/images/crab.png",
+        "id": 3,
+        "isClicked": false
+    },
+    {
+        "name": "Dolphin",
+        "url": "/images/dolphin.png",
+        "id": 4,
+        "isClicked": false
+    },
+    {
+        "name": "Hermit Crab",
+        "url": "/images/hermitcrab.png",
+        "id": 5,
+        "isClicked": false
+    },
+    {
+        "name": "Jelly Fish",
+        "url": "/images/jellyfish.png",
+        "id": 6,
+        "isClicked": false
+    },
+    {
+        "name": "Lobster",
+        "url": "/images/lobster.png",
+        "id": 7,
+        "isClicked": false
+    },
+    {
+        "name": "Manatee",
+        "url": "/images/manatee.png",
+        "id": 8,
+        "isClicked": false
+    },
+    {
+        "name": "Narwhal",
+        "url": "/images/narwhal.png",
+        "id": 9,
+        "isClicked": false
+    },
+    {
+        "name": "Sand Dollar",
+        "url": "/images/sanddollar.png",
+        "id": 10,
+        "isClicked": false
+    },
+    {
+        "name": "Sea Horse",
+        "url": "/images/seahorse.png",
+        "id": 11,
+        "isClicked": false
+    },
+    {
+        "name": "Sea Urchin",
+        "url": "/images/seaurchin.png",
+        "id": 12,
+        "isClicked": false
+    },
+    {
+        "name": "Shark",
+        "url": "/images/shark.png",
+        "id": 13,
+        "isClicked": false
+    },
+    {
+        "name": "Shrimp",
+        "url": "/images/shrimp.png",
+        "id": 14,
+        "isClicked": false
+    },
+    {
+        "name": "Squid",
+        "url": "/images/squid.png",
+        "id": 15,
+        "isClicked": false
+    },
+    {
+        "ame": "Starfish",
+        "url": "/images/starfish.png",
+        "id": 16,
+        "isClicked": false
+    },
+    {
+        "name": "Sting Ray",
+        "url": "/images/stingray.png",
+        "id": 17,
+        "isClicked": false
+    },
+    {
+        "name": "Turtle",
+        "url": "/images/turtle.png",
+        "id": 18,
+        "isClicked": false
+    },
+    {
+        "name": "Wavy Coral",
+        "url": "/images/wavycoral.png",
+        "id": 19,
+        "isClicked": false
+    },
+    {
+        "name": "Whale",
+        "url": "/images/whale.png",
+        "id": 20,
+        "isClicked": false
+    }
+]
