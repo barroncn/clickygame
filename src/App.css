@@ -31,7 +31,7 @@
 }
 
 body {
-  background-image: url("./images/background.jpg");
+  background-image: url("../public/images/background.jpg");
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-color: #090260;
