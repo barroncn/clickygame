@@ -1,10 +1,15 @@
 .navbar {
     background-color: purple;
-    font-weight: bold;
+    font-weight: normal;
     font-size: 25px;
 }
 
-.navbar-text,
-.navbar-brand {
+#scores,
+#webName {
     color: navy;
+}
+
+#messageToUser {
+    margin-right: -180px;
+    font-weight: bold;
 }
