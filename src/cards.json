@@ -1,30 +1,30 @@
 [{
         "name": "Beta Fish",
-        "url": "/images/betafish.png",
+        "url": "./images/betafish.png",
         "id": 1,
         "isClicked": false
     },
     {
         "name": "Blow Fish",
-        "url": "/images/blowfish.png",
+        "url": "./images/blowfish.png",
         "id": 2,
         "isClicked": false
     },
     {
         "name": "Crab",
-        "url": "/images/crab.png",
+        "url": "./images/crab.png",
         "id": 3,
         "isClicked": false
     },
     {
         "name": "Dolphin",
-        "url": "/images/dolphin.png",
+        "url": "./images/dolphin.png",
         "id": 4,
         "isClicked": false
     },
     {
         "name": "Hermit Crab",
-        "url": "/images/hermitcrab.png",
+        "url": "./images/hermitcrab.png",
         "id": 5,
         "isClicked": false
     },
