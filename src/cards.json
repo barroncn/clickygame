@@ -108,13 +108,13 @@
     },
     {
         "name": "Wavy Coral",
-        "url": "/images/wavycoral.png",
+        "url": "%PUBLIC_URL%/images/wavycoral.png",
         "id": 19,
         "isClicked": false
     },
     {
         "name": "Whale",
-        "url": "/images/whale.png",
+        "url": "%PUBLIC_URL%/images/whale.png",
         "id": 20,
         "isClicked": false
     }
