@@ -6,8 +6,6 @@ const Jumbotron = (props) => (
         <div className="container">
             <h1 className="display-4">{props.headerContent}</h1>
             <p className="lead">{props.headerDescription}</p>
-            <br></br>
-            <p className="lead">{props.message}</p>
         </div> 
     </div>
 );

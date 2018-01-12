@@ -22,32 +22,31 @@ class App extends Component {
     this.setState({ cards });
   }
 
+  //When the user clicks on a card, the clicked function is called and passed the clicked card's unique id
   clicked = (id) => {
-    //our array of cards
-    const images = this.state.cards;
+    //Filter the full array of cards to find the card with an id matching the argument id
+    //clickedCard will be a "sub-array" containing only the card the user clicked on
+    const clickedCard = this.state.cards.filter(card => card.id === id);
 
-    //the card we clicked on (this will be an array with one card/image in it)
-    const clickedCard = images.filter(image => image.id === id);
-
-    //if the user has already clicked on the card...
+    //If isClicked is true on the chosen card (the user has already clicked it in the current game)...the game needs to be restarted
     if (clickedCard[0].isClicked) {
-      //Change each image's isClicked key to the value false
-      images.forEach(image => image.isClicked = false);
-      //Set the states: all cards are set to unclicked in DOM, user counter equal to 0 is displayed, and oops message is displayed
+      //Change each card's isClicked key to the value false
+      this.state.cards.forEach(card => card.isClicked = false);
+      //Set the states: all cards in the DOM reflect the isClicked=false change, user counter reset to 0 and displayed, and "oops" message is displayed
       this.setState({
-        cards: images,
+        cards,
         userCounter: 0,
         message: "Oops, guessed it twice! Start again..."
       });
     }
 
-    //the user clicked a new card...
+    //the user clicks correct (unclicked) card...the guess needs to be reflected in the state
     else {
       //Change the isClicked value of the clicked card to true
       clickedCard[0].isClicked = true;
-      //Set the states: cards clicked values updated in DOM, user counter incremented and displayed, and nice guess message is displayed
+      //Set the states: DOM is updated with card's isClicked=true change, user counter incremented and displayed, and "nice guess" message is displayed
       this.setState({
-        cards: images,
+        cards,
         userCounter: this.state.userCounter + 1,
         message: "Nice Guess! Keep it Up!"
       });
@@ -70,26 +69,25 @@ class App extends Component {
   render() {
     return ([
       <NavBar
-        websiteName= "Clicky Game"
-        currentCounter= {this.state.userCounter}
-        highScore={this.state.highScore}
-        message={this.state.message}
-        />,
+          websiteName= "Clicky Game"
+          currentCounter= {this.state.userCounter} //Keeps track of user's correct guesses in the navbar
+          highScore={this.state.highScore} //Keeps track of the current session high score in the navbar
+          message={this.state.message} //Displays the correct message in the navbar
+      />,
       <Jumbotron
-        headerContent="Welcome to Clicky Game!"
-        headerDescription="Click an images to get points, but don't click the same image twice!"
+          headerContent="Welcome to Clicky Game!"
+          headerDescription="Click an image to get points, but don't click the same one twice!"
       />,
       <div className="ImagesDiv">
-      {this.state.cards.map( image => (
-      <Image
-          name= {image.name}
-          url= {image.url}
-          key= {image.id}
-          id={image.id}
-          clicked= {this.clicked}
-          // shake={this.shake}
-          />
-        ))}
+          {this.state.cards.map( image => ( //Makes an image for each card in our "database" (cards.json file)
+              <Image
+                  name= {image.name}
+                  url= {image.url}
+                  key= {image.id}
+                  id={image.id}
+                  clicked= {this.clicked} //Assigns each image with the clicked function from above
+              />
+            ))}
       </div>,
       <Footer/>
     ]);
