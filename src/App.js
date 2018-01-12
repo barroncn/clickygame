@@ -14,7 +14,7 @@ class App extends Component {
     message: "Click a picture to start!"
   };
 
-  //The shuffle function that is called below...
+  //The shuffle function resorts the images on the screen
   shuffle = () => {
     //randomly sorts the cards
     this.state.cards.sort(function(a, b) { return 0.5 - Math.random() });
