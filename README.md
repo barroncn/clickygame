@@ -1,4 +1,4 @@
-Clicky Game
+# Clicky Game
 
 [Check it out here!](https://barroncn.github.io/clickygame/)
 
